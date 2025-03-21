@@ -36,7 +36,7 @@ def display_sidebar_filters(df):
     st.sidebar.markdown("""
     <div style="display: flex; align-items: center; margin-bottom: 0.3rem;">
         <span style="margin-right: 8px; color: rgba(255,255,255,0.8);">👤</span>
-        <span style="color: rgba(255,255,255,0.8); font-weight: 500;">Project Manager</span>
+        <span style="color: rgba(0,0,0,0.8); font-weight: 500;">Project Manager</span>
     </div>
     """, unsafe_allow_html=True)
     
@@ -57,7 +57,7 @@ def display_sidebar_filters(df):
     st.sidebar.markdown("""
     <div style="display: flex; align-items: center; margin: 1rem 0 0.3rem 0;">
         <span style="margin-right: 8px; color: rgba(255,255,255,0.8);">📋</span>
-        <span style="color: rgba(255,255,255,0.8); font-weight: 500;">Project Name</span>
+        <span style="color: rgba(0,0,0,0.8); font-weight: 500;">Project Name</span>
     </div>
     """, unsafe_allow_html=True)
     
@@ -77,7 +77,7 @@ def display_sidebar_filters(df):
     st.sidebar.markdown("""
     <div style="display: flex; align-items: center; margin: 1rem 0 0.3rem 0;">
         <span style="margin-right: 8px; color: rgba(255,255,255,0.8);">🔄</span>
-        <span style="color: rgba(255,255,255,0.8); font-weight: 500;">Status</span>
+        <span style="color: rgba(0,0,0,0.8); font-weight: 500;">Status</span>
     </div>
     """, unsafe_allow_html=True)
     
@@ -93,7 +93,7 @@ def display_sidebar_filters(df):
     st.sidebar.markdown("""
     <div style="display: flex; align-items: center; margin: 1rem 0 0.3rem 0;">
         <span style="margin-right: 8px; color: rgba(255,255,255,0.8);">⏱️</span>
-        <span style="color: rgba(255,255,255,0.8); font-weight: 500;">Timeline Flag</span>
+        <span style="color: rgba(0,0,0,0.8); font-weight: 500;">Timeline Flag</span>
     </div>
     """, unsafe_allow_html=True)
     
