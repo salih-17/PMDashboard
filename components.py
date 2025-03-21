@@ -8,9 +8,9 @@ def display_sidebar_filters(df):
     # Sidebar header with logo and title
     st.sidebar.markdown("""
     <div style="text-align: center; padding: 1rem 0;">
-        <div style="font-size: 2.2rem; margin-bottom: 0.5rem; color: white;">📊</div>
-        <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">Projects Tracker</div>
-        <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">Created by: Abdurrahman Salih</div>
+        <div style="font-size: 2.2rem; margin-bottom: 0.5rem; color: black;">📊</div>
+        <div style="font-size: 1.3rem; font-weight: 600; color: black; margin-bottom: 0.2rem;">Projects Tracker</div>
+        <div style="font-size: 1.3rem; font-weight: 600; color: black; margin-bottom: 0.2rem;">Created by: Abdurrahman Salih</div>
         <div style="font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Dashboard & Reporting Tool</div>
     </div>
     """, unsafe_allow_html=True)
@@ -26,7 +26,7 @@ def display_sidebar_filters(df):
     # Filter section header
     st.sidebar.markdown("""
     <div style="display: flex; align-items: center; margin: 1rem 0 1.5rem 0;">
-        <div style="font-size: 1.1rem; font-weight: 600; color: white; display: flex; align-items: center;">
+        <div style="font-size: 1.1rem; font-weight: 600; color: black; display: flex; align-items: center;">
             <span style="margin-right: 8px;">🔍</span> Filter Projects
         </div>
     </div>
