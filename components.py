@@ -9,7 +9,7 @@ def display_sidebar_filters(df):
     st.sidebar.markdown("""
     <div style="text-align: center; padding: 1rem 0;">
         <div style="font-size: 2.2rem; margin-bottom: 0.5rem; color: white;">📊</div>
-        <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">PROJECT TRACKER</div>
+        <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">Projects Tracker</div>
         <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">Created by: Abdurrahman Salih</div>
         <div style="font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Dashboard & Reporting Tool</div>
     </div>
