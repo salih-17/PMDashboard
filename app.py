@@ -42,12 +42,36 @@ st.markdown("""
     div[data-testid="stSidebar"] {
         background-color: #0A2463;
     }
-    section[data-testid="stSidebar"] label, section[data-testid="stSidebar"] div[data-baseweb="select"] div {
+    /* Custom styling for dropdown labels */
+    section[data-testid="stSidebar"] label {
         color: white !important;
     }
+    /* Dropdown styling */
+    section[data-testid="stSidebar"] div[data-baseweb="select"] div[data-testid="stMarkdownContainer"] {
+        color: white !important;
+    }
+    /* Dropdown value when not focused */
+    section[data-testid="stSidebar"] div[data-baseweb="select"] div[role="combobox"] {
+        color: black !important;
+        background-color: white !important;
+        border-radius: 4px !important;
+    }
+    /* Dropdown options in dropdown menu */
+    div[data-baseweb="popover"] div[role="listbox"] li {
+        color: black !important;
+    }
+    /* Dropdown option when selected */
+    div[data-baseweb="popover"] div[role="listbox"] li[aria-selected="true"] {
+        background-color: #e6f0ff !important;
+    }
+    /* Dropdown button styling */
     button[kind="primaryFormSubmit"] {
         background-color: #1E5AF5 !important;
         border-radius: 4px !important;
+    }
+    /* Header colors in sidebar */
+    section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] strong {
+        color: white !important;
     }
     
     /* Status badges */
@@ -85,7 +109,7 @@ st.markdown("""
     
     /* Header and title elements */
     .dashboard-header {
-        background: linear-gradient(90deg, #0A2463 0%, #1E5AF5 100%);
+        background: linear-gradient(90deg, #164092 0%, #3366CC 100%);
         color: white;
         padding: 20px;
         border-radius: 8px;
@@ -141,11 +165,12 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         text-align: center;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        height: 100%;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .metric-card:hover {
         transform: translateY(-3px);
@@ -295,28 +320,34 @@ st.markdown("""
     /* Count cards */
     .count-card {
         background-color: white;
-        padding: 15px;
+        padding: 1.2rem;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        height: 180px;
+        width: 100%;
         margin-bottom: 15px;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .count-card:hover {
         transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
     .count-value {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: bold;
         color: #0A2463;
-        margin: 5px 0;
+        margin: 10px 0;
+        line-height: 1;
     }
     .count-label {
         font-size: 0.9rem;
         color: #666;
+        margin-top: 5px;
     }
 </style>
 """, unsafe_allow_html=True)
